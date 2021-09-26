@@ -1,0 +1,276 @@
+:root {
+    --color-primary: #4D84F4;
+    --color-secondary: #f5414f;
+
+    --color-text: #2e2e31;
+    --color-border: #d1d0d2;
+
+    --color-success: #88c459;
+    --color-error: #f5414f;
+    --color-warning: #ffd137;
+
+    --blue: #4D84F4;
+    --red-brand: #f5414f;
+
+
+    --white: #fff;
+    --gray: #d1d0d2;
+    --gray-10: #2e2e31;
+    --gray-6: #7b7a7d;
+    --gray-4: #a5a5a6;
+    --gray-3: #bbbbbc;
+    --gray-2: #d1d0d2;
+    --gray-1: #e8e7e8;
+    --white: white;
+    --white-2: #fcfaf4;
+
+    --green: #88c459;
+    --red: #f94747;
+    --yellow: #ffd137;
+    --dark-yellow: rgb(245, 195, 31)
+}
+
+html, body {
+  height: 100%;
+}
+
+body{
+    background-color: var(--white);
+    color: var(--color-text);
+    font-family: 'Open Sans', sans-serif;
+      display: flex;
+  flex-direction: column;
+}
+
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+h1, h2, h3, h4, h5{
+  font-family: 'Merriweather', serif;
+}
+
+h1{
+  margin-bottom: 1.2rem;
+}
+
+h2{
+  margin-top: 0.625rem;
+  margin-bottom: 3rem;
+}
+h3, h4, h5, h6{
+  margin-bottom: 1rem;
+}
+p{
+  /* margin-bottom: 2rem; */
+  line-height: 1.7rem;
+}
+
+.content {
+  flex: 1 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-icon{
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  flex-shrink: 0;
+  background-color: var(--white);
+}
+
+footer p{
+    padding: 1rem 2rem 1rem 1rem;
+    text-align: right;
+    font-size: .8rem;
+    margin-bottom: 0;
+}
+
+.font-merriweather{
+font-family: 'Merriweather', serif;
+}
+
+.freeze{
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.center{
+  display: flex;
+flex-direction: column;
+align-items: center;
+flex-grow: 1;
+justify-content: center;
+}
+.game__details a{
+  display: inline-flex;
+}
+
+
+.game__content{
+  display: flex;
+flex-direction: row;
+justify-content: center;
+flex-grow: 1;
+align-items: center;
+}
+.game__content a{
+  width: auto;
+  align-items: flex-end;
+}
+
+
+
+
+.game__end{
+  
+}
+
+
+
+
+
+
+/* Card styling ---------------------------------- */
+
+/* house the 3D space */
+.scene{
+  perspective: 600px;
+  margin-bottom: 10px;
+   display: flex;
+flex-direction: row;
+justify-content: center;
+pointer-events: none;
+}
+
+/* acts as the 3D object */
+.card{
+  min-height: 150px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid var(--gray-6);
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative; 
+  pointer-events: visible;
+}
+
+.card.is-flipped{
+    transform: rotateY(180deg);
+}
+
+.card:hover .card__face--front{
+background-color: var(--dark-yellow);
+}
+
+.card__face{
+  border-radius: 4px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  line-height: 260px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card__face--back {
+  background-color: var(--white-2);
+  transform: rotateY( 180deg );
+}
+
+.card__face--front {
+  background-color: var(--yellow);
+}
+
+.card__logo, 
+.card__emoji{
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+@media only screen and (max-width: 600px)  {
+  .card__face{
+  font-size: 20px;
+}
+.card{
+  min-height: 100px;
+  min-width: 50px;
+}
+}
+
+.hidden{
+  opacity: 0;
+}
+
+.no-display{
+display: none;
+}
+
+.freeze{
+  pointer-events: none;
+}
+
+
+.button-secondary{
+  border: 1px solid #e8e7e8;
+  border-radius: 10px;
+  padding: 10px;
+  color: #2e2e31;
+  text-decoration: none;
+  margin: 10px;
+  width: max-content;
+
+}
+
+.button-secondary:hover{
+  background-color: #e8e7e8;
+  border-radius: 10px;
+  padding: 10px;
+  color: #2e2e31;
+  text-decoration: none;
+}
+
+.container-game__content__details{
+  display: flex;
+flex-direction: row;
+  
+}
+
+.container-game__content__details h2,
+.container-game__content__details p{
+  text-align: left;
+flex-grow: 1;
+}
+.container-game__content__details a{
+text-align: right;
+}
+
+.container-game__content__details__control{
+  display: flex;
+  flex-direction: column;
+}
+
+.container-game__content__details__control a,
+.container-game__content__details__control p{
+     align-self: flex-end;
+}
+
