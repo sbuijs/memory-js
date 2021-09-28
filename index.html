@@ -23,31 +23,19 @@
 
 <body>
 
-    <script>
-        const boxes = document.getElementsByClassName('box');
-    </script>
-    <!-- <div class="content"> -->
-    <!-- <div id="gameInfo">
-            <p>Highscore: <span id="highScore"></span></p>
-            <p>Amount of cards turned: <span id="score"></span></p>
-            <p>Amount of pairs: <span id="score-pairs"></span></p>
-            <a id="restartGame" class="button-secondary" href="">Restart game</a>
-            <a id="js-reset-playingfield" class="button-secondary" href="">ResetPlayingfield game</a>
-        </div> -->
-
-
+    <!-- Game start details -->
     <div id="game__details" class="center">
         <h1>Hi! <strong>Wanna play?</strong></h1>
         <h2>Choose a theme you'd like to play with</h2>
         <div class="intro__themes">
-            <a class="button-secondary theme-button" data-theme="0" href="">🤡 Carnaval theme</a>
-            <a class="button-secondary theme-button" data-theme="1" href="">🏖 Tropical theme</a>
-            <a class="button-secondary theme-button" data-theme="2" href="">👹 Bulgarian theme</a>
+            <a class="button-secondary theme-button" data-theme="0" href="">Theme name</a>
+            <a class="button-secondary theme-button" data-theme="1" href="">Theme name</a>
+            <a class="button-secondary theme-button" data-theme="2" href="">Theme name</a>
         </div>
     </div>
 
+    <!-- Game content -->
     <div id="game__content" class="center">
-
         <div class="container-md container-game__content__details">
             <h2>Find the pairs!</h2>
             <div class="container-game__content__details__control">
@@ -62,13 +50,11 @@
         </div>
     </div>
 
-
+    <!-- Game end -->
     <div id="game__end" class="center">
         <p><a href="https://giphy.com/gifs/6oMKugqovQnjW">via GIPHY</a></p>
         <iframe src="https://giphy.com/embed/6oMKugqovQnjW" width="480" height="360" frameBorder="0" class="giphy-embed"
             allowFullScreen></iframe>
-
-
         <h1>Wanna <strong>try again</strong>?</h1>
         <a class="button-secondary reset-button" href="">Choose game theme</a>
     </div>
@@ -81,11 +67,9 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
 
-    <!-- The order of these is important! -->
+
     <script src="card.js"></script>
     <script src="cards-script.js"></script>
-
-
 
 </body>
 <footer>

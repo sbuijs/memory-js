@@ -1,11 +1,23 @@
+
+// ----- Objects ------------------------------------------------------------------------------------------------------------------
+
+//Emoji theme objects
+const themeOne = {
+    name: "🤡 Carnaval",
+    emojiArray: ['🍺', '💰', '🤡', '🎡', '🎢', '🎟']
+};
+
+const themeTwo = {
+    name: "🏖 Tropical",
+    emojiArray: ['🐠', '🍍', '🌺', '🌞', '🍹', '🌴']
+};
+
+const themeThree = {
+    name: "🧤 Winter",
+    emojiArray: [' ❄️', '⛄️', '🥌', '🧤', '🥶', '🧣']
+};
+
 // ----- Variables ------------------------------------------------------------------------------------------------------------------
-
-//Emoji theme arrays
-// const themeOneEmojisArray = ['🍺', '💰', '🤡', '🎡', '🎢', '🎟', '🎠', '👻'];
-const themeOneEmojisArray = ['🍺', '💰'];
-const themeTwoEmojisArray = ['🐠', '🍍', '🌺', '🌞', '🍹', '🌴', '🏖', '🦩'];
-const themeThreeEmojisArray = ['👨‍🏭', '🐷', '🧙🏽‍♀️', '🚴‍♂️', '🥥', '👴🏿', '👹', '🧞‍♀️'];
-
 
 //emojiArray, emojiArrayDuplicate are the arrays that will be used to generate the cards with
 let emojiArray;
@@ -47,9 +59,6 @@ const foundCardsElement = document.getElementById("found-cards");
 const totalCardsElement = document.getElementById("total-cards");
 
 
-
-
-
 // ----- Event listeners------------------------------------------------------------------------------------------------------------------
 
 //for each of reset game buttons reload the page
@@ -59,7 +68,6 @@ for (var i = 0; i < gameResetButton.length; i++) {
     });
 };
 
-
 //for each of the theme buttons, create an event listener
 //and set the emoji array based on the button that is clicked
 for (var i = 0; i < themeButton.length; i++) {
@@ -68,11 +76,11 @@ for (var i = 0; i < themeButton.length; i++) {
 
         //using the html data attribite to set the emojiarray that will be used for the cards
         if (this.dataset.theme === '0') {
-            emojiArray = themeOneEmojisArray;
+            emojiArray = themeOne.emojiArray;
         } else if (this.dataset.theme === '1') {
-            emojiArray = themeTwoEmojisArray;
+            emojiArray = themeTwo.emojiArray;
         } else if (this.dataset.theme === '2') {
-            emojiArray = themeThreeEmojisArray;
+            emojiArray = themeThree.emojiArray;
         };
 
         //hide the game details element
@@ -82,8 +90,6 @@ for (var i = 0; i < themeButton.length; i++) {
         startNewGame();
     });
 };
-
-
 
 // ----- Functions ------------------------------------------------------------------------------------------------------------------
 
@@ -111,8 +117,6 @@ function shuffle(sourceArray) {
     }
     return sourceArray;
 };
-
-
 
 function startNewGame() {
     //with the chosen emoji array create an array including duplicates
@@ -235,9 +239,15 @@ function closeAllCards() {
 };
 
 
+function setDetails() {
+    gameContentElement.classList.add('no-display');
+    gameEndElement.classList.add('no-display');
+    themeButton[0].innerHTML = themeOne.name;
+    themeButton[1].innerHTML = themeTwo.name;
+    themeButton[2].innerHTML = themeThree.name;
+};
 
 //when the document is ready, hide the content and end element
 document.addEventListener("DOMContentLoaded", function () {
-    gameContentElement.classList.add('no-display');
-    gameEndElement.classList.add('no-display');
+    setDetails();
 });
