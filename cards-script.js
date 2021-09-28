@@ -142,7 +142,6 @@ function startNewGame() {
 function flipCard(cardHTMLElement, emoji) {
     cardHTMLElement.classList.toggle("is-flipped");
     cardHTMLElement.classList.add('freeze');
-
     //push the emoji to the array
     openCardsArray.push(emoji);
     //check the amount of open cards based on the amount of items in the openCardsArray
@@ -158,6 +157,7 @@ function checkAmountOfOpenCards() {
 
     //if there is more than one cards open    
     if (openCardsArray.length > 1) {
+
         // freeze all other cards
         freezeCards();
         //set cardB so that it can be compared to cardA
