@@ -256,7 +256,9 @@ display: none;
   padding: 10px;
   color: #2e2e31;
   text-decoration: none;
-  margin: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   width: max-content;
 
 }
@@ -274,6 +276,16 @@ display: none;
 flex-direction: row;
   text-align: center;
 }
+@media only screen and (max-width: 600px)  {
+  .container-game__content__details{
+  display: flex;
+flex-direction: column;
+  text-align: center;
+}
+.container-game__content__details h2{
+  margin-bottom: 0;
+}
+}
 
 .container-game__content__details h2,
 .container-game__content__details p{
@@ -287,6 +299,13 @@ text-align: right;
 .container-game__content__details__control{
   display: flex;
   flex-direction: column;
+}
+
+@media only screen and (max-width: 600px)  {
+  .container-game__content__details__control{
+  display: flex;
+  flex-direction: row-reverse;
+}
 }
 
 .container-game__content__details__control a,
