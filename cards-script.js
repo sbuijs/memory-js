@@ -149,7 +149,6 @@ function flipCard(cardHTMLElement, emoji) {
 };
 
 //if there there is one card open, add it to cardA
-
 function checkAmountOfOpenCards() {
     //cardA and cardB are used to compare the two values
     let cardA;

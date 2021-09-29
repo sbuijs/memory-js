@@ -145,9 +145,9 @@ align-items: center;
 
 /* house the 3D space */
 .scene{
-  perspective: 600px;
-  margin-bottom: 10px;
-   display: flex;
+perspective: 600px;
+margin-bottom: 10px;
+display: flex;
 flex-direction: row;
 justify-content: center;
 pointer-events: none;
@@ -167,8 +167,11 @@ pointer-events: none;
 }
 
 .card.is-flipped{
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  background: transparent;
 }
+
+
 
 .card:hover .card__face--front{
 background-color: var(--dark-yellow);
@@ -183,8 +186,10 @@ background-color: var(--dark-yellow);
   text-align: center;
   font-weight: bold;
   font-size: 40px;
+
   -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
 }
 
 .card__face--back {
