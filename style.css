@@ -111,6 +111,9 @@ flex-direction: column;
 align-items: center;
 flex-grow: 1;
 justify-content: center;
+margin-left: 20px;
+margin-right: 20px;
+
 }
 .game__details a{
   display: inline-flex;
@@ -181,6 +184,8 @@ pointer-events: none;
 background-color: var(--dark-yellow);
 }
 
+
+
 .card__face{
   border-radius: 4px;
   position: absolute;
@@ -189,11 +194,17 @@ background-color: var(--dark-yellow);
   line-height: 260px;
   text-align: center;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 45px;
 
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility:    hidden;
   -ms-backface-visibility:     hidden;
+}
+
+@media only screen and (min-width: 600px) {
+ .card__face{
+  font-size: 40px;
+}
 }
 
 .card__face--back {
@@ -217,9 +228,7 @@ background-color: var(--dark-yellow);
 
 
 @media only screen and (max-width: 600px)  {
-  .card__face{
-  font-size: 20px;
-}
+
 .card{
   min-height: 100px;
   min-width: 50px;
