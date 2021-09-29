@@ -132,11 +132,15 @@ align-items: center;
 
 
 
-.game__end{
-  
+.intro__themes{
+  display: flex;
+  flex-direction: column;
 }
-
-
+@media only screen and (min-device-width: 960px) {
+ .intro__themes{
+  display: inline;
+}
+}
 
 
 
@@ -257,7 +261,7 @@ display: none;
 .container-game__content__details{
   display: flex;
 flex-direction: row;
-  
+  text-align: center;
 }
 
 .container-game__content__details h2,
