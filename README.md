@@ -6,4 +6,4 @@ Within this project I've learned various things like, working with a Class, obje
 The end result can be viewed here: sbuijs.github.io/memory-js/
 
 
-<img width="1436" alt="Screenshot 2021-09-29 at 07 48 13" src="https://user-images.githubusercontent.com/1607627/135210446-3386cb00-cc7b-4904-a13c-bd51657f28a0.png">
+<img width="1440" alt="Screenshot 2021-09-29 at 07 49 41" src="https://user-images.githubusercontent.com/1607627/135210633-b3804b8e-96aa-4c1d-93bd-857364210a5e.png">
