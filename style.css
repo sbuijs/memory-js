@@ -194,18 +194,14 @@ background-color: var(--dark-yellow);
   line-height: 260px;
   text-align: center;
   font-weight: bold;
-  font-size: 45px;
+  font-size: 40px;
 
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility:    hidden;
   -ms-backface-visibility:     hidden;
 }
 
-@media only screen and (min-width: 600px) {
- .card__face{
-  font-size: 40px;
-}
-}
+
 
 .card__face--back {
   background-color: var(--white-2);
