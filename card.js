@@ -9,7 +9,7 @@ class Card {
     }
     initCardContent(id, emoji) {
         const cardTemplate = document.createElement("div");
-        cardTemplate.classList = "col-4 col-md-4 col-lg-3 scene";
+        cardTemplate.classList = "scene";
         cardTemplate.innerHTML = `
         <div class="card" data-emojiAttribute="${emoji}">
             <div class="card__face card__face--front">
