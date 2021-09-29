@@ -228,7 +228,9 @@ background-color: var(--dark-yellow);
 
 
 @media only screen and (max-width: 600px)  {
-
+.card__emoji{
+  font-size: 30px;
+}
 .card{
   min-height: 100px;
   min-width: 50px;
