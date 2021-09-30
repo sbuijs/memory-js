@@ -75,13 +75,19 @@ for (var i = 0; i < themeButton.length; i++) {
         e.preventDefault();
 
         //using the html data attribite to set the emojiarray that will be used for the cards
-        if (this.dataset.theme === '0') {
-            emojiArray = themeOne.emojiArray;
-        } else if (this.dataset.theme === '1') {
-            emojiArray = themeTwo.emojiArray;
-        } else if (this.dataset.theme === '2') {
-            emojiArray = themeThree.emojiArray;
-        };
+        //expression that we are going to check
+        switch (this.dataset.theme) {
+            //if the expression is equal to 0, then..
+            case '0':
+                emojiArray = themeOne.emojiArray;
+                break;
+            case '1':
+                emojiArray = themeTwo.emojiArray;
+                break;
+            case '2':
+                emojiArray = themeThree.emojiArray;
+                break;
+        }
 
         //hide the game details element
         gameDetailsElement.classList.add('no-display');
