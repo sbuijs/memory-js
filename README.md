@@ -3,7 +3,7 @@
 
 <h1 align="left">Memory JS</h1>
   <p align="left">
-This memory game project is created for the purpose of learning Vanilla JS.
+Second version of the memory game. This memory game project is created for the purpose of learning Vanilla JS.
 Within this project I've learned various things like, working with a Class, objects, shuffeling an array, comparing values, generating html and appending it to an html element. 
 <br/>
        <a href="https://sbuijs.github.io/memory-js/">View Demo</a>
