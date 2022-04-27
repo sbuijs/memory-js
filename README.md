@@ -10,9 +10,9 @@ Within this project I've learned various things like, working with a Class, obje
   </p>
 </div>
 <br/>
-<br/>
+<img width="1552" alt="Screenshot 2022-04-27 at 10 46 09" src="https://user-images.githubusercontent.com/1607627/165479410-02338925-662d-4691-82d7-a8c44bcf369e.png">
 
-<img width="1552" alt="memory-js" src="https://user-images.githubusercontent.com/1607627/165168148-34c74d59-a5d0-44e9-85de-bda2dea09b73.png">
+<br/>
 
 ## Built With
 - Vanilla Javascript
